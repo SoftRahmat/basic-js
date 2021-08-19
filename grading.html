@@ -1,0 +1,65 @@
+<html>
+  <title>Assignment 4.3</title>
+  <head>
+    <script>
+      function checknum() {
+        num = window.prompt("Please enter a number: ");
+
+        if (num > 0 && num < 100) {
+          alert("True");
+          return true;
+        } else {
+          alert("False");
+          return false;
+        }
+      }
+    </script>
+    <script>
+      function score() {
+        checknum();
+
+        if ((checknum = false)) {
+          window.alert("Your score is invalid. Please enter your score again.");
+          score = window.prompt("Enter your score: ");
+        } else {
+          window.alert("Your score is: " + num);
+          return num;
+        }
+      }
+    </script>
+    <script>
+      function grade() {
+        score();
+        if (score2 < 60) {
+          grade = "F";
+        } else if (score2 < 70) {
+          grade = "D";
+        } else if (score2 < 80) {
+          grade = "C";
+        } else if (score2 < 90) {
+          grade = "B";
+        } else {
+          grade = "A";
+        }
+        return grade;
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      var Lgrade;
+      var score;
+      var score2;
+      var myword;
+      myword = "";
+
+      while (myword != "stop") {
+        Lgrade = grade();
+        window.alert("Your letter grade is: " + Lgrade);
+        myword = prompt("Input the word 'stop' " + "to stop the grading.");
+      }
+
+      alert("THANK YOU!");
+    </script>
+  </body>
+</html>
